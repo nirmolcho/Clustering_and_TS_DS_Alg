@@ -33,7 +33,6 @@ The project is organized into several directories, each with its unique purpose:
 
 - **Time Series Prediction**: Our time series prediction models are contained in this directory. We have implemented three different types of time series predictions here: ARIMA, SARIMA, and Prophet.
 
-Each directory contains further README files for detailed explanations and instructions. 
 
 ---
 
