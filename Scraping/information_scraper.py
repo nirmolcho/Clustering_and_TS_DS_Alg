@@ -71,7 +71,7 @@ class TweetScraper:
                 break
 
         df = pd.DataFrame(config.tweet_data)
-        df.to_csv("tweet_scraped.csv", index=False)
+        df.to_csv("elements_scraped.csv", index=False)
         return tweet_count
 
     def scrape_tweets(driver):
@@ -153,36 +153,42 @@ class BioScraper:
                 user_bio_data.append(new_tweet)
 
         df = pd.DataFrame(user_bio_data)
-        df.to_csv("the_tweets_user_bio.csv", index=False)
+        df.to_csv("user_bio.csv", index=False)
 
-        def process_user_url(self, url):
-            config = general_classes.Config()
-            time.sleep(config.time_sleep_for_profile - 2)
-            self.driver.get(url)
-            start_time = time.time()
-            wait_for_element_update(self.driver)
-            self.get_bio_info()  # "()" has been added to call the method
-            end_time = time.time()
-            time_takes_to_finish = start_time - end_time
-            sleep_time = max(0, config.time_sleep_for_profile - time_takes_to_finish)
-            time.sleep(sleep_time)
+
+class ProfileProcessor:
+    def __init__(self, driver):
+        self.driver = driver
+        self.config = general_classes.Config()
+
+    def process_user_url(self, url):
+        config = general_classes.Config()
+        time.sleep(config.time_sleep_for_profile - 2)
+        self.driver.get(url)
+        start_time = time.time()
+        wait_for_element_update(self.driver)
+        self.get_bio_info()  # "()" has been added to call the method
+        end_time = time.time()
+        time_takes_to_finish = start_time - end_time
+        sleep_time = max(0, config.time_sleep_for_profile - time_takes_to_finish)
+        time.sleep(sleep_time)
 
 
 class UserProfileScraper:
     def __init__(self, driver):
         self.driver = driver
         self.config = general_classes.Config()
-        self.bio_scraper = BioScraper(self.driver)
+        self.profile_processor = ProfileProcessor(driver)
 
     def get_data_from_new_url(self, user_urls_df):
         for url in user_urls_df:
             if url not in self.config.visited_urls:
-                self.bio_scraper.process_user_url(url)  # "self" has been removed
+                self.bio_scraper.process_user_url(url)
                 self.config.visited_urls.add(url)
 
     def get_new_user_url(self, df):
         for _, row in df.iterrows():
-            user_url = f"https://website_name.com/{row['userid']}"
+            user_url = f"/{row['userid']}" # change the website URL
             if user_url not in self.config.user_urls:
                 self.config.user_urls.add(user_url)
         return list(self.config.user_urls)

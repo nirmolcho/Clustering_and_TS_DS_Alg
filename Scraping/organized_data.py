@@ -7,7 +7,7 @@ def final_merge(df1, df2):
     merged_df = df1.merge(df2, on='userid', how='left')
     today = date.today()
     merged_df.drop_duplicates(['tweet_link'], inplace=True)
-    merged_df.to_csv(f"tweets_scraped_{today}.csv", index=False)
+    merged_df.to_csv(f"elements_scraped_{today}.csv", index=False)
 
 
 def looking_for_missing(df1, df2):
@@ -19,8 +19,8 @@ def looking_for_missing(df1, df2):
 
 
 def get_missing_profiles(driver):
-    df1 = pd.read_csv("tweet_scraped.csv")
-    df2 = pd.read_csv("the_tweets_user_bio.csv")
+    df1 = pd.read_csv("elements_scraped.csv")
+    df2 = pd.read_csv("user_bio.csv")
     looking_for_missing(df1, df2)
     df3 = pd.read_csv("missing_profiles.csv")
     df3[["user_name", "userid", "tweet_time_stamp"]] = df3['tweet_used'].str.split('\n', n=2, expand=True)
@@ -37,4 +37,4 @@ def get_user_profile_info_to_csv(df, driver, last_index):
 def merge_missing(df1, df2):
     merged_df_profile_bio = pd.concat([df1, df2])
     merged_df_profile_bio = merged_df.reset_index(drop=True)
-    merged_df_profile_bio.to_csv("the_tweets_user_bio.csv", index=False)
+    merged_df_profile_bio.to_csv("user_bio.csv", index=False)
