@@ -23,6 +23,8 @@ def main():
     driver = DriverSetup()
     total_timer.start_timer()
     driver.setup_driver()
+    scrape_elements = TweetScraper()
+    scrape_user_profile = UserProfileScraper()
 
     login_timer.start_timer()
     automator = Automator(driver)
@@ -31,17 +33,17 @@ def main():
 
     automator.search_box(driver, get_user_search_term())
 
-    # scraping_data_timer.start_timer()
-    # scrape_tweets(driver)
-    # scraping_data_timer.end_timer()
-    #
-    # scraping_user_data_timer.start_timer()
-    # scrape_user_profile(tdf, driver2, last_index)
-    # scraping_user_data_timer.end_timer()
-    #
-    # total_timer.end_timer()
-    #
-    # get_final_twitter()
+    scraping_data_timer.start_timer()
+    scrape_elements.scrape_tweets(driver)
+    scraping_data_timer.end_timer()
+
+    scraping_user_data_timer.start_timer()
+    scrape_user_profile.scrape_user_profile(tdf, driver2, last_index)
+    scraping_user_data_timer.end_timer()
+
+    total_timer.end_timer()
+
+    get_final_twitter()
 
     return total_timer.time, login_timer.time, scraping_data_timer.time, scraping_user_data_timer.time
 

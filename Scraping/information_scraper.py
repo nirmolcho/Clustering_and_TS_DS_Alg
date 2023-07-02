@@ -34,7 +34,7 @@ class TweetScraper:
         self.config = general_classes.Config()
         self.element_retrieval = ElementRetrieval(driver)
 
-    def getTweetsInfo(driver):
+    def getTweetsInfo(self, driver):
         config = general_classes.Config()
         element_retrieval = ElementRetrieval(driver)
         wait_for_element_update(driver)
