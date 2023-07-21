@@ -1,18 +1,14 @@
-import re
 import os
-import csv
 import time
-import urllib3
 import logging
 import pandas as pd
-from datetime import date, datetime
+from datetime import datetime
 from selenium.webdriver.common.by import By
 from typing import Any, Callable, Optional
-from selenium_commands_for_use import PageInteractions, ElementRetrieval, DriverSetup
+from selenium_commands_for_use import PageInteractions, ElementRetrieval
 from cleaning_the_data import clean_tweets_bio_data, clean_tweets_data
 import general_classes
-from organized_data import cleaningDataset, final_merge, looking_for_missing, get_missing_profiles, \
-                           get_user_profile_info_to_csv, merge_missing
+from organized_data import cleaningDataset, final_merge
 
 
 class SafeWrapper:

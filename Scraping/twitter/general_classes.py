@@ -23,6 +23,12 @@ class Config:
         self.time_sleep_for_profile = 2
         self.user_name = "just4tester22@gmail.com"
         self.password = "Pa##w0rd"
+        self.user_id = "ImScaping"
+
+
+#         self.user_name = "nirmolcho001@cs.colman.ac.il"
+#         self.password = "Pa##w0rd"
+#         self.user_id = "CheckIfWork"
 
         self.tweet_data = []
         self.user_bio_data = []
