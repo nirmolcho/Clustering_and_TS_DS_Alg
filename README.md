@@ -16,8 +16,6 @@ To run this project, make sure to install the following libraries:
 ```bash
 pip install jupyter pandas numpy selenium selenium-wire pyobjc-framework-webkit webdriver-manager scipy scikit-learn statsmodels pmdarima
 ```
- lk
----
 
 ## Directory Structure
 
