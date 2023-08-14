@@ -2,9 +2,6 @@
 
 class GeneralFuncs:
     def get_scraperapi_url(self, url):
-        """
-            Converts url into API request for Scraper API.
-        """
         payload = {'api_key': API_KEY, 'url': url}
         proxy_url = 'http://api.scraperapi.com/?' + urlencode(payload)
         return proxy_url

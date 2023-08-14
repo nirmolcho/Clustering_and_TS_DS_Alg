@@ -7,13 +7,13 @@ class WindowPopUP:
         self.element = FindElements(self.driver)
 
     @staticmethod
-    def exit_popup(self):
-        path = '//div[@data-e2e="modal-close-inner-button]"'
+    def exit_popup():
+        path = ''
         return path
 
     @staticmethod
     def popup_exists():
-        path = '//div[@data-e2e="login-modal"]"'
+        path = ''
         return path
 
     def check_if_popup_exists(self, element_):

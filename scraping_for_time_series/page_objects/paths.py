@@ -3,43 +3,42 @@ class PathsFunctions:
     # main website element
     @staticmethod
     def main_element_XPATH():
-        path2 = ("//body/div[@class='application-outlet']/div[@class='authentication-outlet']/div["
-                 "@id='voyager-feed']/div[@id='ember21']/div[2]/div[1]/div[1]")
-        return path2
+        path = ''
+        return path
 
     @staticmethod
     def main_element_CSS_SELECTOR():
-        path = '.scaffold-layout__row.scaffold-layout__content'
+        path = ''
         return path
 
     @staticmethod
     def search_general_XPATH():
-        path2 = "//input[@placeholder='Search']"
+        path2 = ""
         return path2
 
     @staticmethod
     def search_general_CSS_SELECTOR():
-        path = "input[placeholder='Search']"
+        path = ""
         return path
 
     @staticmethod
     def username_XPATH():
-        path2 = '//div[@class="text-input flex"]/input[@id="session_key"]'
+        path2 = ''
         return path2
 
     @staticmethod
     def username_CSS_SELECTOR():
-        path = "div.text-input.flex > input#session_key"
+        path = ""
         return path
 
     @staticmethod
     def password_XPATH():
-        path2 = "//input[@id='session_password']"
+        path2 = ""
         return path2
 
     @staticmethod
     def password_CSS_SELECTOR():
-        path = "#session_password"
+        path = ""
         return path
 
     @staticmethod

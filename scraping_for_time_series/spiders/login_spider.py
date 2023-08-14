@@ -27,17 +27,12 @@ class LoginSpider:
         self.TIKTOK_API_KEY = 'awxbrimvhm200dlm'
 
     def get_scraperapi_url(self, url):
-        """
-            Converts url into API request for Scraper API.
-        """
         payload = {'api_key': self.API_KEY, 'url': url}
         proxy_url = 'http://api.scraperapi.com/?' + urlencode(payload)
         return proxy_url
 
     def login_website(self):
-        #business_api = BusinessAccountApi(access_token=self.TIKTOK_API_KEY)
-        #business_api.login(email=self.user_email, password=self.user_password)
-        url = 'https://www.linkedin.com'
+        url = ''
         self.driver.get(url)
         self.driver.maximize_window()
         self.driver.refresh()
