@@ -31,6 +31,7 @@
             <JupyterConnectionParameters>
               <option name="managed" value="true" />
               <option name="sdkHomePath" value="$USER_HOME$/opt/anaconda3/lib/python3.9/ds_final_task/bin/Python" />
+              <option name="sdkName" value="Python 3.9 (final_task_df)" />
             </JupyterConnectionParameters>
           </value>
         </entry>
