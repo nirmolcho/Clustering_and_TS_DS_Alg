@@ -27,8 +27,6 @@ The project is organized into several directories, each with its unique purpose:
 
 - **Clustering**: In this directory, we apply different clustering techniques to our data. Here, you'll find our implementation of various sequences and three distinct clustering methods.
 
-- **Recommendation**: This section of our project is dedicated to providing recommendations. Our system offers three types of recommendations: User-to-User, User-to-Item, and Item-to-Item. All the relevant scripts and notebooks for these recommendations can be found here.
-
 - **Time Series Prediction**: Our time series prediction models are contained in this directory. We have implemented three different types of time series predictions here: ARIMA, SARIMA, and Prophet.
 
 
