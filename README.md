@@ -21,14 +21,15 @@ pip install jupyter pandas numpy selenium selenium-wire pyobjc-framework-webkit 
 
 The project is organized into several directories, each with its unique purpose:
 
-- **Scraping**: This directory contains the core functionality of our scraper. It includes the main function for running the scraper and the Selenium commands used for scraping.
+- **Scraping**: This directory contains the core functionality of our scraper. It includes the main function for running the scraper and the Selenium commands used for scraping, plus using an API to get all the data from the website.
 
 - **EDA and Data Cleaning**: This is where we perform exploratory data analysis and clean our scraped data. It houses all the scripts and notebooks used in these data preprocessing steps.
 
 - **Clustering**: In this directory, we apply different clustering techniques to our data. Here, you'll find our implementation of various sequences and three distinct clustering methods.
 
-- **Time Series Prediction**: Our time series prediction models are contained in this directory. We have implemented three different types of time series predictions here: ARIMA, SARIMA, and Prophet.
+- **Time Series Prediction**: Our time series prediction models are contained in this directory. We have implemented three different types of time series predictions here: ARIMA, GRACH, Wavelet Analysis and SVM models.
 
+- **task requirements**: This directory contains the requirements for the project.
 
 ---
 
