@@ -37,7 +37,7 @@ The project is organized into several directories, each with its unique purpose:
 
 - **Time Series Prediction**: Our time series prediction models are contained in this directory. We have implemented three different types of time series predictions here: ARIMA, GRACH, Wavelet Analysis and SVM models.
 
-- **task requirements**: This directory contains the requirements for the project.
+- **task requirements**: This directory contains the requirements for the project. [task requirements](requirements.md)
 
 
 
