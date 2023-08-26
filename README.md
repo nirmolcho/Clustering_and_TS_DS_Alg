@@ -7,7 +7,10 @@
 ![Plotly Badge](https://img.shields.io/badge/Plotly-239120?style=for-the-badge&logo=plotly&logoColor=white)
 ![Selenium Badge](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
 ![GitHub Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
-
+![Jupyter Badge](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![PyCharm Badge](https://img.shields.io/badge/PyCharm-000000?style=for-the-badge&logo=pycharm&logoColor=white)
+![yfinance Badge](https://img.shields.io/badge/yfinance-000000?style=for-the-badge&logo=yahoo&logoColor=white)
+![ergast Badge](https://img.shields.io/badge/ergast-000000?style=for-the-badge&logo=ergast&logoColor=white)
 ---
 
 This is the final project for our Principles and Technologies for Data Science course. 
