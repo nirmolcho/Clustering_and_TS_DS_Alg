@@ -39,12 +39,6 @@ The project is organized into several directories, each with its unique purpose:
 
 - **task requirements**: This directory contains the requirements for the project.
 
----
 
-## Usage
 
-You can clone this repository and run the main functions in each directory to see the results of our project.
 
----
-
-This is just a basic template, feel free to add more details about the project, such as the contributors, license, and acknowledgements.
