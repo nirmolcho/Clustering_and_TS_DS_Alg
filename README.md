@@ -8,13 +8,21 @@
 ![Selenium Badge](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
 ![GitHub Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
-This is the final project for our Principles and Technologies for Data Science course. We have chosen to work on "leave blank."
+---
+
+This is the final project for our Principles and Technologies for Data Science course. 
+
+We have chosen to work on "F1" data from the [Ergast Developer API](https://ergast.com/mrd/).
+
+And we used yfinance to get the stock data [yfinance API](https://pypi.org/project/yfinance/).
+
+---
 
 ## Installation
 To run this project, make sure to install the following libraries:
 
 ```bash
-pip install jupyter pandas numpy selenium selenium-wire pyobjc-framework-webkit webdriver-manager scipy scikit-learn statsmodels pmdarima
+pip install jupyter pandas numpy selenium selenium-wire pyobjc-framework-webkit webdriver-manager scipy scikit-learn statsmodels pmdarima yfinance plotly
 ```
 
 ## Directory Structure
